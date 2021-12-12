@@ -23,7 +23,7 @@ public class Sender {
     public void sendMessage() {
 
         System.out.println("Sending message...");
-        MessageObject messageObject = new MessageObject(UUID.randomUUID(), "Hello from JU19_QUEUE!", LocalDateTime.now());
+        MessageObject messageObject = new MessageObject(UUID.randomUUID(), "Hello from JU12_QUEUE!", LocalDateTime.now());
         jmsTemplate.convertAndSend(JmsConfig.JU20_QUEUE, messageObject);
         System.out.println("Message sent!");
 
